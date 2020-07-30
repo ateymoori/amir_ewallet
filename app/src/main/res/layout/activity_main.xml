@@ -6,13 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".presentation.main.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph" />
+
+<!--    <com.flyco.tablayout.SegmentTabLayout-->
+<!--        android:id="@+id/gender"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/_34sdp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/endGuideLine"-->
+<!--        app:layout_constraintStart_toStartOf="@id/startGuideLine"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/searchTV"-->
+<!--        app:layout_goneMarginTop="@dimen/_3sdp"-->
+<!--        app:tl_indicator_anim_enable="true"-->
+<!--        app:tl_indicator_bounce_enable="true"-->
+<!--        app:tl_indicator_margin_bottom="@dimen/_2sdp"-->
+<!--        app:tl_indicator_margin_left="2dp"-->
+<!--        app:tl_indicator_margin_right="2dp"-->
+<!--        app:tl_indicator_margin_top="@dimen/_2sdp"-->
+<!--        app:tl_tab_space_equal="true" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
